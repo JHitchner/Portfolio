@@ -32,22 +32,41 @@ body{
   }
   #doorImg{
     position: relative;
-    top: 200px;
-    height: 500px;
-    left: 0px;
+    top: 180px;
+    height: 550px;
+    left: -30px;
+    transform: scale(1);
   }
   #doorImg:hover{
     transform: scale(1.1);
   }
   #myStuff{
     position: absolute;
-    height: 550px;
-    width: 350px;
-    background-color: green;
-    left: 150px;
-    top: 250px;
-  }
-  #glow{
+    height: 873px;
+    width: 780px;
+    background:url("behind_door.png")left center no-repeat;
+    /*background-position: 0 0;*/
+    left: -20px;
+    top: 80px;
+    transform: scale(.7);
+    animation: play 6s steps(6)infinite;
+		/*animation-play-state: paused;*/
+		animation-fill-mode: forwards;
+		-webkit-backface-visibility: hidden;
+	}
+	@keyframes play {
+		 0% {
+			 background-position: 0px;
+       transform: scale(.7);
+		 }
+      100% {
+        background-position: -5453px;
+        transform: scale(.7);
+      }
+	}
+
+
+  /*#glow{
     position: absolute;
     height: 550px;
     width: 350px;
@@ -56,7 +75,7 @@ body{
     left: 150px;
     top: 200px;
     z-index: -1;
-  }
+  }*/
   /*Projects*/
   .projects{
     position: relative;
