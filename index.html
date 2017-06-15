@@ -10,28 +10,50 @@
     <title>Juliet Presents</title>
   </head>
   <body>
+      <p id= "welcome">Welcome</p>
       <p id="intro">Hi! I'm Juliet. I am a developer with a love for games, art and everything creepy. Please click on an icon to see my projects or to learn more about me.</p>
     <div id="backgroundImage">
     </div>
     <div id="tents"></div>
     <nav>
-
-      <!-- <a class="links" href="About">About</a> -->
+      <div class="bubble">
+      </div>
+      <div class="bubble2">
+      </div>
+      <div class="bubble">
+      </div>
+      <div class="bubble2">
+      </div>
+      <div class="bubble2">
+      </div>
     </nav>
     <div id="eyeConContainerOne">
-      <a id="home" href="index.html">
-        <div id="projectEye3">
+      <a class="home" href="index.html">
+        <div class="projectEye3">
         </div>
       </a>
-      <a id="project" title="Projects" href="projects.html">
-        <div id="projectEye"></div>
+      <a class="project" title="Projects" href="#myProjects">
+        <div class="projectEye"></div>
       </a>
-      <a id="contact" title="Contact" href="contact.html">
-        <div id="projectEye2">
+      <a class="contact" title="Contact" href="#aboutContact">
+        <div class="projectEye2">
         </div>
       </a>
     </div>
     <!-- Added -->
+    <div id="myProjects">
+      <a class="home" href="index.html">
+        <div class="projectEye3">
+        </div>
+      </a>
+      <a class="project" title="Projects" href="#myProjects">
+        <div class="projectEye"></div>
+      </a>
+      <a class="contact" title="Contact" href="#aboutContact">
+        <div class="projectEye2">
+        </div>
+      </a>
+    </div>
     <div class="projects">
       <a id="herokuPocket"href="https://vast-cove-19004.herokuapp.com/">Launch PocketChef</a>
       <a id="githubPocket"href="https://github.com/JHitchner/PocketChef/tree/master/project-pocketchef">Github</a>
@@ -41,6 +63,9 @@
       <img src="pocketchefDemo.gif" id="pocketGif">
       <video id="pocket"src="pocketChefDemo.mov" controls ="controls">
       </video>
+      <p class="details">
+        PocketChef was created to adress the inconvenience of online recipe searching and grocery list creation. The aim is to allow users to search recipes and convert the recipe to an editable shopping list that can be saved for later use. The app was built in Ruby on Rails,ruby, javascript, and utilized the Edamam API. This is still an ongoing project. For more details on what features will be added please visit my gitHub :).
+      </p>
     </div>
     <div class="projects">
       <a id="herokuNanny"href="https://dunkelheit.herokuapp.com/">Launch Nanny Dunkelheit</a>
@@ -50,13 +75,39 @@
       </div>
       <img src="nanny.gif" id="nannyGif">
       <video id="nanny" controls="controls" src="nannyDemo.mov"></video>
+      <p class="details">
+        Nanny Dunkelheit is an interactive storytelling experience based on a game I am working on. This was created in Sinatra with vanilla javascript and pure css animations. Sendgrid API was incorporated for emails and Facebook plug-ins to connect with social media.Images created in photoshop and music sourced was edited in Audacity.
+      </p>
     </div>
-
     <!--Added  -->
-    <!-- <div id="myStuff">
+    <!--Contact/About  -->
+    <div id="aboutContact">
+      <a class="home" href="index.html">
+        <div class="projectEye3">
+        </div>
+      </a>
+      <a class="project" title="Projects" href="#myProjects">
+        <div class="projectEye"></div>
+      </a>
+      <a class="contact" title="Contact" href="#aboutContact">
+        <div class="projectEye2">
+        </div>
+      </a>
     </div>
-    <div id="glow">
-    </div> -->
+    <span id="gitHub">GitHubLink</span>
+    <span id="linkedIn">LinkedInLink</span>
+    <span id="email">Email</span>
+    <div id="bio">
+      <p id="blurb1">
+        Thanks for visiting my page! If you are interested in the work I do or have any questions please connect with me. I am always working on something new and this site is in constant ebb and flow so please come back! I won't even tell you how many different designs I did for this site alone...four.
+      </p>
+
+      <p id="blurb2">
+         Anywho, a little about me before you click away. I am a long time lover and developer of games. I have spent most of my life building things...and then destroying them and then learning from those destroyed things. I am a horror buff and I contruct creepy and ghoulish Halloween props...becuase I love my Halloweens scary and accurate ;).
+       </p>
+     </div>
+    <a id="resume" href="hitchner_resume.pdf" download>Resume</a>
+
     <footer></footer>
   </body>
 </html>
