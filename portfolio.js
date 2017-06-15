@@ -41,4 +41,5 @@ pocketGif.addEventListener("mouseenter", function(){
 pocketGif.addEventListener("mouseleave", function(){
   clickDemoPocket.style.display = "none";
 });
+
 });

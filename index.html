@@ -2,22 +2,62 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script type="text/javascript"src="portfolio.js">
+
+    </script>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <title>Juliet Presents</title>
   </head>
   <body>
+    <div id="backgroundImage">
+        <p id="intro">Hi! I'm Juliet. I am a developer with a love for games, art and everything creepy. Please click on an icon to see my projects or to learn more about me.</p>
+    </div>
+    <div id="tents"></div>
     <nav>
-      <a class="links" href="index.html">Home</a>
-      <a class="links" href="projects.html">Projects</a>
-      <a class="links" href="Contact">Contact</a>
-      <a class="links" href="About">About</a>
+      <a id="home" href="index.html">
+        <div id="projectEye3">
+        </div>
+      </a>
+      <a id="project" title="Projects" href="projects.html">
+        <div id="projectEye"></div>
+      </a>
+      <a id="contact" title="Contact" href="contact.html">
+        <div id="projectEye2">
+        </div>
+      </a>
+      <!-- <a class="links" href="About">About</a> -->
     </nav>
-    <a id="door" href="projects.html">
+    <!-- <a id="poo" href="#doorImg">Projects</a> -->
+    <!-- <a id="door" href="projects.html">
       <img id="doorImg"src="door.png">
-    </a>
+    </a> -->
+    <!-- Added -->
+    <div class="projects">
+      <a id="herokuPocket"href="https://vast-cove-19004.herokuapp.com/">Launch PocketChef</a>
+      <a id="githubPocket"href="https://github.com/JHitchner/PocketChef/tree/master/project-pocketchef">Github</a>
+      <div id="clickDemoPocket">
+        Click here to see the demo or the link above to experience it yourself.
+      </div>
+      <img src="pocketchefDemo.gif" id="pocketGif">
+      <video id="pocket"src="pocketChefDemo.mov" controls ="controls">
+      </video>
+    </div>
+    <div class="projects">
+      <a id="herokuNanny"href="https://dunkelheit.herokuapp.com/">Launch Nanny Dunkelheit</a>
+      <a id="githubNanny"href="https://github.com/JHitchner/NannyDunkelheit">Github</a>
+      <div id="clickDemoNanny">
+        Click here to see the demo or the link above to experience it yourself.
+      </div>
+      <img src="nanny.gif" id="nannyGif">
+
+    <video controls="controls" id="nanny" src="nannyDemo.mov"></video>
+    </div>
+    <!--Added  -->
     <div id="myStuff">
     </div>
     <div id="glow">
     </div>
+
   </body>
 </html>
