@@ -5,7 +5,10 @@
     var pocketGif =document.getElementById("pocketGif");
     var pocketDemo =document.getElementById("pocket");
     var clickDemoPocket =document.getElementById("clickDemoPocket");
-
+    var monsterTounge =document.getElementById("intro");
+    var monsterText =document.getElementById("introText");
+    var welcomeAni =document.getElementById("welcome");
+    var body =document.getElementById("body");
     // nannyDemo.pause();
 
     nannyGif.addEventListener("click", function(){
@@ -41,5 +44,13 @@ pocketGif.addEventListener("mouseenter", function(){
 pocketGif.addEventListener("mouseleave", function(){
   clickDemoPocket.style.display = "none";
 });
+welcomeAni.addEventListener("animationend", function(){
+  monsterTounge.style.animationPlayState="running";
+});
+monsterTounge.addEventListener("animationend",function(){
+    monsterText.style.display ="block";
+    // body.style.overflowY="scroll";
+
+})
 
 });

@@ -4,16 +4,19 @@
     <meta charset="utf-8">
       <link rel="stylesheet" href="main.css">
     <script type="text/javascript"src="portfolio.js">
-
     </script>
   <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Dancing+Script" rel="stylesheet">
     <title>Juliet Presents</title>
   </head>
-  <body>
+  <body id="body">
       <p id= "welcome">Welcome</p>
-      <p id="intro">Hi! I'm Juliet. I am a developer with a love for games, art and everything creepy. Please click on an icon to see my projects or to learn more about me.</p>
-    <div id="backgroundImage">
-    </div>
+      <div id="intro">
+        <p id="introText">
+          Hi! I'm Juliet. I am a developer with a love for games, art and everything creepy. Please click on the EyeCons (haaa) to navigate around...just don't press too hard.
+        </p>
+      </div>
+    <!-- <div id="backgroundImage">
+    </div> -->
     <div id="tents"></div>
     <nav>
       <div class="bubble">
@@ -27,7 +30,7 @@
       <div class="bubble2">
       </div>
     </nav>
-    <div id="eyeConContainerOne">
+    <div id="homeBut">
       <a class="home" href="index.html">
         <div class="projectEye3">
         </div>
@@ -39,6 +42,8 @@
         <div class="projectEye2">
         </div>
       </a>
+      <div class="teeth">
+      </div>
     </div>
     <!-- Added -->
     <div id="myProjects">
@@ -53,6 +58,8 @@
         <div class="projectEye2">
         </div>
       </a>
+      <div class="teeth">
+      </div>
     </div>
     <div class="projects">
       <a id="herokuPocket"href="https://vast-cove-19004.herokuapp.com/">Launch PocketChef</a>
@@ -79,7 +86,6 @@
         Nanny Dunkelheit is an interactive storytelling experience based on a game I am working on. This was created in Sinatra with vanilla javascript and pure css animations. Sendgrid API was incorporated for emails and Facebook plug-ins to connect with social media.Images created in photoshop and music sourced was edited in Audacity.
       </p>
     </div>
-    <!--Added  -->
     <!--Contact/About  -->
     <div id="aboutContact">
       <a class="home" href="index.html">
@@ -93,10 +99,19 @@
         <div class="projectEye2">
         </div>
       </a>
+      <div class="teeth">
+      </div>
     </div>
-    <span id="gitHub">GitHubLink</span>
-    <span id="linkedIn">LinkedInLink</span>
-    <span id="email">Email</span>
+    <a href="https://github.com/JHitchner">
+      <img id="gitHub" src="github.png">
+    </a>
+    <a href="https://www.linkedin.com/in/julietpresents/">
+      <img id="linkedIn"src="linkedin.png">
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=juliet.hitchner@gmail.com&su=Hello&shva=1">
+      <img id="email" src="email.png">
+    </a>
+    <a href="hitchner_resume.pdf" download><img id="resume"src="pdf-icon.png" ></a>
     <div id="bio">
       <p id="blurb1">
         Thanks for visiting my page! If you are interested in the work I do or have any questions please connect with me. I am always working on something new and this site is in constant ebb and flow so please come back! I won't even tell you how many different designs I did for this site alone...four.
@@ -106,8 +121,9 @@
          Anywho, a little about me before you click away. I am a long time lover and developer of games. I have spent most of my life building things...and then destroying them and then learning from those destroyed things. I am a horror buff and I contruct creepy and ghoulish Halloween props...becuase I love my Halloweens scary and accurate ;).
        </p>
      </div>
-    <a id="resume" href="hitchner_resume.pdf" download>Resume</a>
-
-    <footer></footer>
+      <footer>
+        <div id="teethBot">
+        </div>
+      </footer>
   </body>
 </html>

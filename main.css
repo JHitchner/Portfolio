@@ -1,4 +1,4 @@
-body{
+#body{
   background-color: #29262A;
   height: 100%;
   width: 100%;
@@ -9,8 +9,7 @@ body{
   and (min-width: 350px)
   and (max-width: 600px)
   and (-webkit-min-device-pixel-ratio: 1)
-{
-
+ {
   nav{
     position: absolute;
     height: 450px;
@@ -22,7 +21,7 @@ body{
     z-index: -1;
     opacity: .5;
   }
-  #eyeConContainerOne{
+  #homeBut{
     position: absolute;
     height: 80px;
     width: 100%;
@@ -30,6 +29,17 @@ body{
     z-index: 3;
     left: 0px;
     background-color:#0B6B7A;
+  }
+  .teeth{
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    top: 0px;
+    z-index: -1;
+    background-image: url("monsterTeeth.png");
+    transform: scale(.8);
+    background-position:  center ;
+    background-repeat: no-repeat;
   }
   @keyframes bubble {
     0% {bottom:-400px;transform:scale(1);opacity:0}
@@ -68,16 +78,16 @@ body{
     animation: bubble2 6s infinite ease-in-out;
     animation-fill-mode: forwards;
   }
-  footer{
-    position: fixed;
-    height: 50px;
-    bottom:0px;
-    left:0px;
+  #teethBot{
+    position: relative;
+    height: 150px;
     width: 100%;
-    text-align: center;
-    background-color:#0B6B7A;
-    z-index: 2;
-    opacity: .5;
+    bottom: 70px;
+    z-index: -3;
+    background-image: url("monsterTeeth.png");
+    transform: scale(.8) rotate(180deg);
+    background-position:  center ;
+    background-repeat: no-repeat;
   }
   .project{
     position: absolute;
@@ -97,9 +107,9 @@ body{
   }
   .contact{
     position: absolute;
-    left: 80%;
+    left: 78%;
     top: 0px;
-    transform: scale(.8);
+    transform: scale(.9);
   }
   .projectEye2{
     background-image: url("eyeCon2.png");
@@ -114,9 +124,9 @@ body{
   }
   .home{
     position: absolute;
-      left: 2%;
+      left: 5%;
       top: 0px;
-      transform: scale(.8);
+      transform: scale(.9);
   }
   .projectEye3{
     background-image: url("eyeCon3.png");
@@ -129,18 +139,18 @@ body{
     background-image: url("eyeCon3_close.png");
     transform: rotate(180deg);
   }
-  #backgroundImage{
+  /*#backgroundImage{
     position: relative;
-    left: -80px;
+    left: -60px;
     transform: scale(.8);
-    /*background-image: url("homeImg.png");*/
+    background-image: url("seasketch.png");
     background-position: center center;
     background-repeat: no-repeat;
     opacity: .3;
-    top: -16px;
-    height: 580px;
-    width: 700px;
-  }
+    top: -200px;
+    height: 400px;
+    width: 900px;
+  }*/
   #welcome{
     color: white;
     font-size: 70px;
@@ -179,18 +189,30 @@ body{
     }
   }
   #intro{
+    width: 70%;
+    position: absolute;
+    top: 470px;
+    left: 15%;
+    z-index: 2;
+    border-radius: 30px;
+    background-color:rgba(255,80,150,.7);
+    animation: grow 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+  #introText{
+    position: relative;
     color: white;
     font-family: 'Bubbler One', sans-serif;
     font-size: 25px;
-    width: 70%;
-    height: 200px;
-    position: absolute;
     padding: 30px;
-    top: 470px;
-    left: 10%;
-    z-index: 2;
-    border-radius: 30px;
-    background-color:rgba(24, 150, 87, .7);
+    text-align: center;
+    top: 30px;
+    display: none;
+  }
+  @keyframes grow{
+    from{height: 0px;}
+    to{height: 265px;}
   }
   #tents{
     position: absolute;
@@ -211,18 +233,23 @@ body{
   /*Contact/About*/
   #resume{
     position: relative;
-    top: 800px;
+    top: 1900px;
     color: white;
+    height: 60px;
+    width: 60px;
+    z-index: 2;
+    left: 250px;
   }
   #bio {
     position: relative;
     left:50px;
     height: 500px;
     width: 80%;
-    /*top: 900px;*/
-    bottom: -700px;
+    top: 1400px;
+    /*bottom: 10px;*/
     background-color:rgba(24, 150, 87, .7);
     border-radius: 30px;
+    margin-bottom: 100px;
   }
   #blurb1{
     font-family: 'Bubbler One', sans-serif;
@@ -234,7 +261,6 @@ body{
     left: 30px;
     font-size: 20px;
     top:20px;
-
   }
   #blurb2{
     font-family: 'Bubbler One', sans-serif;
@@ -247,49 +273,75 @@ body{
     font-size: 20px;
   }
   #linkedIn{
-    background-color:blue;
+    height: 60px;
+    width: 60px;
     border-radius: 100px;
     position: relative;
-    top: 650px;
-    left: -30px;
+    top:  1350px;
+    left: 180px;
+  }
+  #linkedIn:hover{
+    transform: scale(1.1);
+    border: 2px solid white;
   }
   #gitHub{
-    background-color:blue;
+    height: 60px;
+    width: 60px;
     border-radius: 100px;
     position: relative;
-    top: 650px;
-    left: 200px;
+    top:  1350px;
+    left: 80px;
+  }
+  #gitHub:hover{
+    transform: scale(1.1);
+    border: 2px solid white;
   }
   #email{
-    background-color:blue;
+    height:60px;
+    width:60px;
     border-radius: 100px;
     position: relative;
-    top: 650px;
-    left: 260px;
+    top: 1350px;
+    left: 300px;
+  }
+  #email:hover{
+    transform: scale(1.1);
+    border: 2px solid white;
   }
   #aboutContact{
     position: relative;
     height: 80px;
     width: 100%;
-    top: 500px;
+    top: 1195px;
     z-index: 3;
-    left: 0px;
+    left: -10px;
     background-color:#0B6B7A;
+  }
+  footer{
+    position: fixed;
+    height:50px;
+    bottom:-10px;
+    left:0px;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    background-color:#0B6B7A;
+    z-index: 4;
   }
   /*Projects*/
   #myProjects{
     position: relative;
     height: 80px;
     width: 100%;
-    top: 350px;
+    top: 1150px;
     z-index: 3;
-    left: 0px;
+    left: -10px;
     background-color:#0B6B7A;
   }
   .projects{
       background-color:rgba(0,135,96,.8);
       position: relative;
-      top: 450px;
+      top: 1150px;
       left:-60px;
       border-radius:30px;
       height: 500px;
@@ -426,211 +478,470 @@ body{
     transform:scale(.8);
   }
 }
-
 @media all
   and (min-width: 601px)
   and (max-width: 900px)
   and (-webkit-min-device-pixel-ratio: 1) {
   nav{
-    position: fixed;
-    height: 100%;
-    top:0px;
-    left:0px;
-    width: 50px;
-    text-align: center;
-    background-color: black;
-    z-index: 5;
-  }
-  #project{
     position: absolute;
-    left: 10px;
-    top: 100px;
+    height: 450px;
+    top:50px;
+    left:0px;
+    width: 100%;
+    text-align: center;
+    background-color:#0B6B7A;
+    z-index: -1;
+    opacity: .5;
   }
-  #projectEye{
+  #homeBut{
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    top: 430px;
+    z-index: 3;
+    left: 0px;
+    background-color:#0B6B7A;
+  }
+  .teeth{
+    position: absolute;
+    height: 150px;
+    /*width: 650px;*/
+    width: 80%;
+    left: 90px;
+    top: 10px;
+    z-index: -1;
+    background-image: url("monsterTeeth.png");
+    transform: scale(1);
+    background-position: center center ;
+    background-repeat: no-repeat;
+  }
+  @keyframes bubble {
+    0% {bottom:-400px;transform:scale(1);opacity:0}
+    1% {bottom:-400px;transform:scale(1);opacity:1}
+    100% {bottom:20px;transform:scale(.3);opacity:0}
+  }
+  .bubble {
+    width:25px;
+    height:25px;
+    position:relative;
+    margin-left: 200px;
+    float: left;
+    bottom:-500px;
+    border-radius:100px;
+    border: 2px solid white;
+    background-color:#33DADC;
+    animation: bubble 6s infinite ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes bubble2 {
+    0% {bottom:-380px;transform:scale(1);opacity:0}
+    1% {bottom:-380px;transform:scale(1);opacity:1}
+    30% {bottom:-380px;transform:scale(1);opacity:1}
+    100% {bottom:30px;transform:scale(.3);opacity:0}
+  }
+  .bubble2 {
+    width:20px;
+    height:20px;
+    position:relative;
+    left: 100px;
+    margin-left: 200px;
+    float: left;
+    bottom:-380px;
+    border-radius:100px;
+    background-color:white;
+    animation: bubble2 6s infinite ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  #teethBot{
+    position: relative;
+    height: 150px;
+    width: 100%;
+    bottom: 70px;
+    z-index: -3;
+    background-image: url("monsterTeeth.png");
+    transform: scale(1) rotate(180deg);
+    background-position:  center ;
+    background-repeat: no-repeat;
+  }
+  .project{
+    position: absolute;
+    left: 43%;
+    top: 0px;
+    transform: scale(1.2);
+  }
+  .projectEye{
     background-image: url("eyeCon.png");
     position: relative;
     top: 0px;
     height: 100px;
     width: 100px;
   }
-  #projectEye:hover{
+  .projectEye:hover{
     background-image: url("eyeCon_close.png");
   }
-  #contact{
+  .contact{
     position: absolute;
-    left: 10px;
-    top: 250px;
+    left: 80%;
+    top: 0px;
+    transform: scale(1.1);
   }
-  #projectEye2{
+  .projectEye2{
     background-image: url("eyeCon2.png");
     position: relative;
     top: 0px;
     height: 100px;
     width: 100px;
   }
-  #projectEye2:hover{
+  .projectEye2:hover{
     background-image: url("eyeCon2_close.png");
     transform: rotate(180deg);
   }
-  #home{
+  .home{
     position: absolute;
-    left: 10px;
-    top: 400px;
+      left: 10%;
+      top: 0px;
+      transform: scale(1.1);
   }
-  #projectEye3{
+  .projectEye3{
     background-image: url("eyeCon3.png");
     position: relative;
     top: 0px;
     height: 100px;
     width: 100px;
   }
-  #projectEye3:hover{
+  .projectEye3:hover{
     background-image: url("eyeCon3_close.png");
     transform: rotate(180deg);
   }
-  #backgroundImage{
+  #welcome{
+    color: white;
+    font-size: 70px;
+    font-family: 'Dancing Script', cursive;
     position: relative;
-    left: 50px;
-    background-image: url("homeImg.png");
-    background-position: bottom center no-repeat;
-    opacity: .5;
-    height: 650px;
-    width: 900px;
+    top: -40px;
+    left: 300px;
+    z-index: -2;
+    animation: float 10s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  @keyframes float{
+    0%{
+      transform: translateY(50px)translateX(30px)
+      rotate(3deg) ;
+      opacity: 0;
+    }
+    20%{
+      transform: translateY(90px) translateX(-30px) rotate(10deg) ;
+      opacity: .2;
+    }
+    50%{
+      transform: rotate(-20deg)translateX(30px) translateY(150px);
+      opacity: .5;
+    }
+    80%{
+      transform: rotate(10deg)translateX(-30px) translateY(270px);
+      opacity: .8;
+    }
+    100%{
+      transform: translateX(30px) translateY(270px)
+      rotate(-10deg);
+      opacity: .9;
+    }
   }
   #intro{
+    width: 60%;
+    position: absolute;
+    top: 470px;
+    left: 21%;
+    z-index: 2;
+    border-radius: 30px;
+    background-color:rgba(255,80,150,.7);
+    animation: grow 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+  #introText{
+    position: relative;
     color: white;
     font-family: 'Bubbler One', sans-serif;
-    font-size: 30px;
-    width: 350px;
-    height: 300px;
-    position: absolute;
-    top: 60px;
-    left: 350px;
-    z-index: 2;
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+    top: 30px;
+    display: none;
+  }
+  @keyframes grow{
+    from{height: 0px;}
+    to{height: 265px;}
   }
   #tents{
     position: absolute;
     background-image:url("tents.png");
-    top: 110px;
-    left: 130px;
+    top: 45px;
+    left: 0px;
     background-position: top left no-repeat;
     height:525px;
-    width:919px;
-    z-index: 3;
-    transform: scale(.9);
+    width:915px;
+    z-index: -2;
+    transform: scale(.8);
     animation: touchy 2s steps(4) infinite;
   }
   @keyframes touchy{
     from{ background-position: 0 0;}
     to{ background-position: -3676px 0;}
   }
+  /*Contact/About*/
+  #resume{
+    position: relative;
+    top: 1900px;
+    color: white;
+    height: 60px;
+    width: 60px;
+    z-index: 2;
+    left: 450px;
+  }
+  #bio {
+    position: relative;
+    left: 70px;
+    height: 500px;
+    width: 80%;
+    top: 1400px;
+    /*bottom: 10px;*/
+    background-color:rgba(24, 150, 87, .7);
+    border-radius: 30px;
+    margin-bottom: 100px;
+  }
+  #blurb1{
+    font-family: 'Bubbler One', sans-serif;
+    position: relative;
+    padding:10px;
+    color: white;
+    width: 90%;
+    height: 200px;
+    left: 40px;
+    font-size: 25px;
+    top:20px;
+  }
+  #blurb2{
+    font-family: 'Bubbler One', sans-serif;
+    position: relative;
+    padding:10px;
+    color: white;
+    width: 90%;
+    height: 200px;
+    left: 30px;
+    font-size: 25px;
+  }
+  #linkedIn{
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    position: relative;
+    top:  1350px;
+    left: 300px;
+  }
+  #linkedIn:hover{
+    transform: scale(1.1);
+    border: 2px solid white;
+  }
+  #gitHub{
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    position: relative;
+    top:  1350px;
+    left: 90px;
+  }
+  #gitHub:hover{
+    transform: scale(1.1);
+    border: 2px solid white;
+  }
+  #email{
+    height:60px;
+    width:60px;
+    border-radius: 100px;
+    position: relative;
+    top: 1350px;
+    left: 520px;
+  }
+  #email:hover{
+    transform: scale(1.1);
+    border: 2px solid white;
+  }
+  #aboutContact{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    top: 1195px;
+    z-index: 3;
+    left: -10px;
+    background-color:#0B6B7A;
+  }
+  footer{
+    position: fixed;
+    height:50px;
+    bottom:-10px;
+    left:0px;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    background-color:#0B6B7A;
+    z-index: 4;
+  }
+  /*Projects*/
+  #myProjects{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    top: 1150px;
+    z-index: 3;
+    left: -10px;
+    background-color:#0B6B7A;
+  }
+  .projects{
+    background-color:rgba(0,135,96,.8);
+    position: relative;
+    top: 1150px;
+    left:-45px;
+    border-radius:30px;
+    height: 620px;
+    width: 90%;
+    margin: 80px;
+  }
+  .details{
+    position: relative;
+    top: 390px;
+    left: 70px;
+    height: 160px;
+    width: 80%;
+    color: white;
+    font-family: 'Bubbler One', sans-serif;
+    font-size:25px;
+    /*background-color:#0B6B7A;*/
+    padding: 10px;
+    border-radius: 30px;
+  }
+  #nanny{
+    pointer-events: none;
+    position: absolute;
+    bottom: 0px;
+    height: auto;
+    width: 511px;
+    top: 70px;
+    left:120px;
+    overflow: none;
+    display: none;
+    transform: scale(1.1);
+  }
+  #herokuNanny{
+    position: absolute;
+    z-index: 3;
+    /*text-decoration: none;*/
+    font-family: 'Bubbler One', sans-serif;
+    color: white;
+    font-size: 18px;
+    top: 10px;
+    left:100px;
+  }
+  #githubNanny{
+    position: absolute;
+    z-index: 3;
+    left: 100px;
+    /*text-decoration: none;*/
+    font-family: 'Bubbler One', sans-serif;
+    font-size: 18px;
+    color: white;
+    top: 30px;
+  }
+  #nannyGif{
+    position:absolute;
+    top: 20px;
+    cursor:pointer;
+    height: auto;
+    width: 710px;
+    left: 22px;
+    transform: scale(.8);
+  }
+  #clickDemoNanny{
+    pointer-events: none;
+    top: 80px;
+    position: absolute;
+    color: white;
+    font-family: 'Bubbler One', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    z-index: 3;
+    padding-top: 30px;
+    height:150px;
+    width: 710px;
+    left: 22px;
+    background-color: rgba(250,250,255, .4);
+    display: none;
+    transform: scale(.8);
+  }
 
-/*Projects*/
-.projects{
-  position: relative;
-  top: 250px;
-  left:30px;
-  height: 300px;
-  width: 90%;
-  margin: 80px;
-}
-#nanny{
-  pointer-events: none;
-  position: absolute;
-  bottom: 0px;
-  right:0px;
-  border: 11px solid black;
-  height: auto;
-  width: 511px;
-  top: 10px;
-  left:-10px;
-  background-size: cover;
-  overflow: none;
-  display: none;
-}
-#herokuNanny{
-  position: absolute;
-  z-index: 3;
-  text-decoration: none;
-  color: white;
-  top: -20px;
-}
-#githubNanny{
-  position: absolute;
-  z-index: 3;
-  text-decoration: none;
-  color: white;
-  top: 0px;
-}
-#nannyGif{
-  position:absolute;
-  top: 30px;
-  cursor:pointer;
-  height: auto;
-  width: 511px;
-}
-#clickDemoNanny{
-  pointer-events: none;
-  top: 50px;
-  position: absolute;
-  color: white;
-  font-size: 25px;
-  text-align: center;
-  z-index: 3;
-  padding-top: 30px;
-  height:150px;
-  width: 511px;
-  background-color: rgba(250,250,255, .2);
-  display: none;
-}
-#pocketGif{
-  position:absolute;
-  top: -50px;
-  cursor:pointer;
-  height: auto;
-  width: 511px;
-}
-#pocket{
-  pointer-events: none;
-  position: absolute;
-  bottom: 0px;
-  right:0px;
-  border: 11px solid black;
-  height: auto;
-  width: 100%;
-  top: -60px;
-  left:-10px;
-  background-size: cover;
-  overflow: none;
-  display: none;
-}
-#herokuPocket{
-  position: absolute;
-  z-index: 3;
-  text-decoration: none;
-  color: white;
-  top: -100px;
-}
-#githubPocket{
-  position: absolute;
-  z-index: 3;
-  text-decoration: none;
-  color: white;
-  top: -80px;
-}
-#clickDemoPocket{
-  pointer-events: none;
-  top: -30px;
-  position: absolute;
-  color: white;
-  font-size: 25px;
-  text-align: center;
-  z-index: 3;
-  padding-top: 30px;
-  height:150px;
-  width: 511px;
-  background-color: rgba(250,250,255, .2);
-  display: none;
+  #pocketGif{
+    position:absolute;
+    top: 20px;
+    cursor:pointer;
+    height: auto;
+    width: 710px;
+    left: 20px;
+    transform: scale(.8);
+  }
+  #pocket{
+    pointer-events: none;
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+    height: auto;
+    width: 511px;
+    top: 70px;
+    left:120px;
+    background-size: cover;
+    overflow: none;
+    display: none;
+    transform: scale(1.1);
+  }
+  #herokuPocket{
+    position: absolute;
+    z-index: 3;
+    /*text-decoration: none;*/
+    font-family: 'Bubbler One', sans-serif;
+    color: white;
+    top: 10px;
+    left: 100px;
+    font-size: 18px;
+  }
+  #githubPocket{
+    position: absolute;
+    z-index: 3;
+    /*text-decoration: none;*/
+    font-family: 'Bubbler One', sans-serif;
+    color: white;
+    left: 100px;
+    font-size: 18px;
+    top: 30px;
+  }
+  #clickDemoPocket{
+    pointer-events: none;
+    top: 70px;
+    left: 20px;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px black;
+    font-family: 'Bubbler One', sans-serif;
+    text-align: center;
+    z-index: 3;
+    padding-top: 30px;
+    height:150px;
+    width: 710px;
+    background-color: rgba(250,250,255, .4);
+    display: none;
+    transform:scale(.8);
   }
 }
 @media only screen
@@ -638,15 +949,6 @@ body{
   and (max-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 1)
    {
-/*
-  nav{
-    position: fixed;
-    height: 50px;
-    width: 100%;
-    text-align: center;
-    background-color: gray;
-
-  }*/
 }
 @media only screen
   and (min-width: 1601px)
